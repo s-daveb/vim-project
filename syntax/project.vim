@@ -14,7 +14,9 @@ syntax  match  ProjectUnit     /.:/
 execute 'syntax match ProjectSlash /\'. s:sep .'/'
 execute 'syntax match ProjectPath /\'. s:sep . '.*\' . s:sep .'/ contains=ProjectSlash'
 
-highlight projectPath ctermfg=11 ctermbg=8 guifg=#586e75
+
+highlight projectPath ctermfg=DarkGrey ctermbg=None guifg=#586e75
+
 highlight link ProjectFile    String
 highlight link ProjectBracket Normal
 highlight link ProjectNumber  Directory
